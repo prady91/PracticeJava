@@ -9,12 +9,12 @@ import java.util.stream.Collectors;
 public class WordBreak {
 
 
-    public List<String> wordBreak(String s, List<String> wordDict) {
+    public List<String> wordBreakSplit(String s, List<String> wordDict) {
 
         List<String> wordSplit = new ArrayList<>();
 
 
-
+        return wordSplit;
 
     }
 
@@ -32,13 +32,12 @@ public class WordBreak {
                 if (dictSet.contains(word)) {
                     splitPossible[i][i+w-1] = 1;
                 } else {
-                    splitPossible[i][i+w-1] =
+                    //
+                    splitPossible[i][i+w-1] = 2;
                 }
             }
         }
-
-
-
+        return false;
     }
 
 

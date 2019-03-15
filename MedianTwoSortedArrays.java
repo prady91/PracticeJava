@@ -11,6 +11,7 @@ public class MedianTwoSortedArrays {
         int mid = (s1+e1)/2;
         int m = nums1[mid];
 
+        return 0.0;
     }
 
 
